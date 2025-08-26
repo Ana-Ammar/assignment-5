@@ -10,8 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
+<body class="bg-[#f5fff6]">
     <header class="mx-auto">
         <nav id="navbar" class="flex px-5 md:px-14 py-6 justify-between items-center">
             <div id="logo-nam" class="flex flex-col md:flex-row md:items-center gap-3">
@@ -40,12 +43,55 @@
     </header>
     
     <main>
+
         <!-- Hero Section -->
          <section id="banner" class="h-60 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5">
             <img src="./assets/logo-dark.png" alt="" class="mx-auto h-24">
             <h1 class="text-center text-white font-semibold text-4xl my-3">জরুরি সেবা  ডিরেক্টরি</h1>
             <p class="text-center text-white font-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
          </section>
+
+         <!-- Card and History Section -->
+          <section class="mt-12 px-14 mx-auto md:grid grid-rows-2 grid-cols-12 gap-8">
+            <!-- Card Section -->
+            <section class="col-span-9 grid md:grid-cols-3">
+
+                <div class="card bg-white shadow-md p-8">
+                    <div class="flex justify-between items-center">
+                        <img src="./assets/emergency.png" alt="" class="w-[60px] bg-[#ffe3e2] p-4 rounded-2xl">
+                        <span id="" class="heart-btn cursor-pointer transition active:scale-95"><i class="fa-regular fa-heart fa-xl text-gray-600"></i></span>
+                    </div>
+                    <h1 class="font-bold text-2xl mt-4">জাতীয় জরুরি সেবা</h1>
+                    <p class="text-[#5c5c5c]">National Emergency</p>
+                    <h1 class="font-bold text-2xl mt-6">999</h1>
+                    <span class="bg-[#f2f2f2] text-[#5c5c5c] rounded-full px-4 py-[6px] w-fit mt-1">সার্বজনীন</span>
+                    <div class="card-actions mt-6 grid grid-cols-2">
+                        <button class="copy-btn btn border-[#d4d6d5] text-[#5c5c5c] rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"> <i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- History Section -->
+            <aside class="shadow-md bg-white col-span-3 col-start-auto  p-6 rounded-[12px]">
+
+                <div class="flex justify-between items-center">
+                    <h1 class=""><i class="fa-solid fa-clock-rotate-left fa-xl"></i><span class="text-2xl font-semibold "> Call History</span></h1>
+                    <button class="btn h-12 px-9 rounded-[50px] bg-[#00A63E] text-white">Clear</button>
+                </div>
+
+                <div class="bg-[#fafafa] rounded-lg p-4 mt-4 flex justify-between items-center mb-2">
+                    <div class="">
+                        <h1 class="text-[18px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-[18px] text-[#5c5c5c]">999</p>
+                    </div>
+                    <p>11:36:58 AM</p>
+                </div>
+
+            </aside>
+
+          </section>
     </main>
 </body>
 </html>
