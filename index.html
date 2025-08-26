@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!--Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
+    <header class="mx-auto">
+        <nav id="navbar" class="flex px-5 md:px-14 py-6 justify-between items-center">
+            <div id="logo-nam" class="flex flex-col md:flex-row md:items-center gap-3">
+                <img src="./assets/logo.png" alt="" class="w-14 h-14" >
+                <h1 class="font-extrabold text-2xl text-[#006747]">Emergency <br>Service</h1>
+            </div>
+
+            <div id="point-section" class="flex flex-col md:flex-row gap-5 ">
+
+                <div class="flex items-center gap-[10px] bg-[#41ff6b1a] rounded-[50px] h-[52px] py-3 px-8">
+                    <p id="" class="font-bold">0</p>
+                    <img src="./assets/heart.png" alt="" class="w-[30px]">
+                </div>
+                <div class="flex items-center gap-[10px] bg-[#41ff6b1a] rounded-[50px] h-[52px] py-3 px-8">
+                    <p id="" class="font-bold">100</p>
+                    <img src="./assets/coin.png" alt="" class="w-[30px]">
+                </div>
+                <div class="flex items-center gap-[10px] bg-[#00a63e] rounded-[50px] h-[52px] py-3 px-8">
+                    <p id="" class="font-bold text-white">2</p>
+                    <p id="" class="font-bold text-white">Copy</p>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
     
+    <main>
+        <!-- Hero Section -->
+         <section id="banner" class="h-60 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5">
+            <img src="./assets/logo-dark.png" alt="" class="mx-auto h-24">
+            <h1 class="text-center text-white font-semibold text-4xl my-3">জরুরি সেবা  ডিরেক্টরি</h1>
+            <p class="text-center text-white font-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+         </section>
+    </main>
 </body>
 </html>
