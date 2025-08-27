@@ -57,7 +57,7 @@ for (const btn of callBtn) {
             history.appendChild(newDiv)
         }
         else{
-            alert(`কল করার মত পর্যাপ্ত কয়েন নেই`)
+            alert(`❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।`)
         }
 
     })
@@ -74,7 +74,7 @@ const buttons = document.getElementsByClassName("copy-btn");
       e.preventDefault();
       let copy = btn.parentNode.parentNode.children[3];
       let copyText =  navigator.clipboard.writeText(copy.innerText);
-      alert('text coppied')
+      alert(`নম্বর কপি হয়েছে : ${copy.innerText}`)
     });
   }
 
