@@ -66,7 +66,7 @@ for (const btn of callBtn) {
 // copy button click
 
 button("copy-btn", "copy-point");
-
+ 
 // copy number after clicking copy button
 const buttons = document.getElementsByClassName("copy-btn");
   for (const btn of buttons) {
