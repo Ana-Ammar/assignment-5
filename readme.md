@@ -2,7 +2,7 @@
 
 ## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
- ## Ans: 
+
  - getElementById : select element by unique ID, always returns a single
    element.
    
@@ -19,7 +19,7 @@
 
 ## 2. How do you create and insert a new element into the DOM?
 
-## Ans: 
+
   - Create HTML element -- const newDiv = document.createElement('div')
   - Add content element -- niwDiv.innerText = "Assignment 5" or
     newDiv.innerHTML = `<h1>Assignment 5</h1>` .
@@ -32,14 +32,14 @@
 ## 3. What is Event Bubbling and how does it work?
 
 - Event Bubbling :
-   It is a behavior in the DOM where an event starts from the element when that was clicked (the target element) and then bubbles up through all of its parent elements and reaching the top of the DOM tree.
+    It is a behavior in the DOM where an event starts from the element when that was clicked (the target element) and then bubbles up through all of its parent elements and reaching the top of the DOM tree.
 
 - how does it work :
-    `<div class="grandparent">`
+  -  `<div class="grandparent">`
       `<div class="parent">`
-        `<button class="child">Click Me!</button>`
+          `<button class="child">Click Me!</button>`
       `</div>`
-    `</div>  -->`
+    `</div>`
 
   - If you click the `<button class="child">`, the event is fired on the target element.
   - Then it bubbles up to the parent div.
@@ -53,7 +53,7 @@
 - Event Delegation :
   It is a powerful technique in JavaScript for handling events in the DOM. It involves adding a single event listener to a parent element, which handles events on its child elements.
 
-- Benefits
+- Benefits :
   Code Simplicity, Memory Efficiency and Dynamic Element Handle.
   In short, you don’t need to attach multiple event listeners to each child element, even for newly created elements.
 
